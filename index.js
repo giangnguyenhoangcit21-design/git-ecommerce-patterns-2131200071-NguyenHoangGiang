@@ -31,15 +31,15 @@ console.log("\n");
 
 
 // --- Part 3A: Decorator Pattern ---
-// console.log("--- 3A: Decorator Pattern ---");
-// let myBook = new BaseProduct('Design Patterns', 45); // Fix
-// // Wrap the book with a gift wrap decorator
-// myBook = new GiftWrapDecorator(myBook);
-// // Wrap it again with an extended warranty decorator
-// myBook = new ExtendedWarrantyDecorator(myBook);
-// console.log(`Final Price: $${myBook.getPrice()}`);
-// console.log(`Final Description: ${myBook.getDescription()}`);
-// console.log("\n");
+console.log("--- 3A: Decorator Pattern ---");
+let myBook = new BaseProduct('Design Patterns', 45); // Fix
+// Wrap the book with a gift wrap decorator
+myBook = new GiftWrapDecorator(myBook);
+// Wrap it again with an extended warranty decorator
+myBook = new ExtendedWarrantyDecorator(myBook);
+console.log(`Final Price: $${myBook.getPrice()}`);
+console.log(`Final Description: ${myBook.getDescription()}`);
+console.log("\n");
 
 
 // --- Part 3B: Facade Pattern ---
