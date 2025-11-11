@@ -36,6 +36,17 @@ class ProductFactory {
         // Use a switch statement or if/else chain to check the `type`.
         // Based on the `type`, return a new instance of `Book`, `Electronic`, or a default `Product`.
         // Pass the `details` object to the constructor of the chosen class.
+
+        // Use a switch statement to check the `type`.
+        switch (type) {
+            case 'book':
+                return new Book(details);
+            case 'electronic':
+                return new Electronic(details);
+            default:
+                // Return a default Product if the type doesn't match
+                return new Product(details);
+        }
     }
 }
 
